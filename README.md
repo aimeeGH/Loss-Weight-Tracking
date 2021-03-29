@@ -1,7 +1,7 @@
 # Weight Loss Tracking
 
 ## Project Goals
-1. Our primary goal aims to train a linear regression machine learning model which predicts the average daily calorie consumption based on an individual’s average daily activity information, such as daily walking steps, walking distance, very active minutes and so on.
+1. Our primary goal aims to train a linear regression machine learning model which predicts the average calories burned based on an individual’s average daily activity information, such as daily walking steps, walking distance, very active minutes and so on.
 2. Our secondary goal aims to train an ensemble regression learning model given the same dataset to explore how we can combine multiple regression models to improve the accuracy and overall performance of prediction beyong linear regression.
 3. Lastly, we hope to create an interactive and engaging atmosphere for our members to share ideas, tell stories, practice ML skills, strengthen leadership, teamwork and communication skills.
 
@@ -10,7 +10,10 @@
 <img src="./logo.jpg" width= "300" height = "300" >
 
 ## Exploratory Data Analysis
+To determine how many calories would be burned based on different types of physical exertion, we found a detailed exercise log that displayed categories such as the type, intensity, duration (minutes), and distance (km) of the exercise. Although this dataset provided many variables, we ended up focusing our analysis only on those that had an effect on the amount of calories burned. This made the data much more accessible and easier to measure.
 
+After scrapping the data, we decided to test for multicollinearity by creating a heatmap. Variables with high multicollinearity factors were not used together when creating our model. Then, using Excel and Python (+ Pandas Packages), we finished our exploratory data analysis by cleaning the data. With the data cleaned, we were ready to start building our model. Below is our correlation heatmap. As you can see, some variables such as "Total Steps" and "Total Distance" had a correlation of 1, so when we built our model, we were careful to keep our Variable Inflation Factor low.
+<img width="431" alt="Screen Shot 2021-03-28 at 7 59 35 PM" src="https://user-images.githubusercontent.com/77707861/112781665-216b1e00-9000-11eb-96dd-954855476f33.png">
 
 
 ## Analysis of Linear Regression
